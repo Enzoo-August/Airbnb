@@ -196,7 +196,8 @@ header {
 
 /* ========================= main ========================= */
 .main {
-  margin-left: 80px;
+  margin-left: 11rem;
+  margin-right: 11rem;
 }
 
 .com-sal {
