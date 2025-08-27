@@ -98,7 +98,6 @@ header {
 
   .sidebar {
     height: 48px;
-    width: 26rem;
     display: flex;
     align-items: center;
     gap: 1rem;
