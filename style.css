@@ -75,7 +75,8 @@ header {
   display: flex;
   justify-content: space-between; /* separa logo, barra e menu */
   align-items: center;
-  padding: 0px 11rem;
+  padding-right:11rem;
+  padding-left: 11rem;
   border-bottom: 1px solid #ddd;
 
 
@@ -87,6 +88,7 @@ header {
   }
 
   .sidebar {
+    height: 48px;
     display: flex;
     align-items: center;
     gap: 0;
@@ -95,12 +97,11 @@ header {
     padding: 4px 8px;
     box-shadow: 0 1px 2px rgba(0,0,0,0.1);
     background-color: #fff;
+    margin-left: 14.5rem;
 
     & li {
       list-style: none;
-      padding: 0 16px;
       font-size: 14px;
-      font-weight: 500;
       color: var(--cor-secundaria);
       display: flex;
       align-items: center;
@@ -117,21 +118,22 @@ header {
         gap: 6px;
       }
       & img{
-        width: 48px;
-        height: 48px;
-
+        width: 16px;
+        height: 16px;
       }
+
     }
 
     & .lupa {
       background-color: var(--cor-primaria);
-      border-radius: 50%;
-      width: 40px;
-      height: 40px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin-left: 8px;
+      padding: 0.5rem;
+      border-radius: 100%;
+        &img {
+          align-items: center;
+          justify-content: center;
+      }
+
+    }
 
       & img {
         height: auto;
@@ -154,6 +156,15 @@ header {
         align-items: center;
         gap: 6px;
       }
+      &:not(:first-child){
+        background: #f2f2f2;
+        border-radius: 100%;
+        padding: 0.7rem;
+      }
+    }
+    & img{
+      width: 16px;
+      height: 16px;
     }
   }
 }
