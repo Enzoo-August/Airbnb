@@ -84,103 +84,103 @@ header {
   justify-content: space-between; /* separa logo, barra e menu */
   align-items: center;
 
-  padding-right: 11rem;
-  padding-left: 11rem;
-
+  padding: 0 11rem;
   border-bottom: 1px solid #ddd;
-}
 
-/* logo */
-header .hearder img {
-  width: 102px;
-  height: 32px;
-}
+  /* logo */
+  .hearder {
+    img {
+      width: 102px;
+      height: 32px;
+    }
+  }
 
-/* barra de busca */
-header .sidebar {
-  height: 48px;
+  /* barra de busca */
+  .sidebar {
+    height: 48px;
 
-  display: flex;
-  align-items: center;
-  gap: 0;
+    display: flex;
+    align-items: center;
+    gap: 0;
 
-  border: 1px solid var(--cor-borda);
-  border-radius: 40px;
+    border: 1px solid var(--cor-borda);
+    border-radius: 40px;
 
-  padding: 4px 8px;
-  margin-left: 14.5rem;
+    padding: 4px 8px;
+    margin-left: 14.5rem;
 
-  background-color: #fff;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
-}
+    background-color: #fff;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
 
-header .sidebar li {
-  list-style: none;
-  font-size: 14px;
-  color: var(--cor-secundaria);
+    & li {
+      list-style: none;
+      font-size: 14px;
+      color: var(--cor-secundaria);
 
-  display: flex;
-  align-items: center;
-}
+      display: flex;
+      align-items: center;
 
-header .sidebar li:not(:last-child):not(.lupa) {
-  border-right: 1px solid var(--cor-borda);
-}
+      &:not(:last-child):not(.lupa) {
+        border-right: 1px solid var(--cor-borda);
+      }
 
-header .sidebar li a {
-  text-decoration: none;
-  color: var(--cor-secundaria);
+      a {
+        text-decoration: none;
+        color: var(--cor-secundaria);
 
-  display: flex;
-  align-items: center;
-  gap: 6px;
-}
+        display: flex;
+        align-items: center;
+        gap: 6px;
+      }
 
-header .sidebar li img {
-  width: 16px;
-  height: 16px;
-}
+      img {
+        width: 16px;
+        height: 16px;
+      }
+    }
 
-/* botão lupa */
-header .sidebar .lupa {
-  background-color: var(--cor-primaria);
-  padding: 0.5rem;
-  border-radius: 100%;
-}
+    .lupa {
+      background-color: var(--cor-primaria);
+      padding: 0.5rem;
+      border-radius: 100%;
+    }
 
-header .sidebar img {
-  height: auto;
-}
+    img {
+      height: auto;
+    }
+  }
 
+  /* menu */
+  .menu {
+    display: flex;
+    align-items: center;
+    gap: 25px;
 
-/* ========================= menu ========================= */
-header .menu {
-  display: flex;
-  align-items: center;
-  gap: 25px;
+    list-style: none;
 
-  list-style: none;
-}
+    li {
+      a {
+        text-decoration: none;
+        color: #333;
+        font-size: 14px;
 
-header .menu li a {
-  text-decoration: none;
-  color: #333;
-  font-size: 14px;
+        display: flex;
+        align-items: center;
+        gap: 6px;
+      }
 
-  display: flex;
-  align-items: center;
-  gap: 6px;
-}
+      &:not(:first-child) {
+        background: #f2f2f2;
+        border-radius: 100%;
+        padding: 0.7rem;
+      }
+    }
 
-header .menu li:not(:first-child) {
-  background: #f2f2f2;
-  border-radius: 100%;
-  padding: 0.7rem;
-}
-
-header .menu img {
-  width: 16px;
-  height: 16px;
+    img {
+      width: 16px;
+      height: 16px;
+    }
+  }
 }
 
 
