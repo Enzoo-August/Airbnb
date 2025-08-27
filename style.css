@@ -1,0 +1,157 @@
+/* 1. Use a more-intuitive box-sizing model */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* 2. Remove default margin */
+* {
+  margin: 0;
+}
+
+/* 3. Enable keyword animations */
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    interpolate-size: allow-keywords;
+  }
+}
+
+body {
+  /* 4. Add accessible line-height */
+  line-height: 1.5;
+  /* 5. Improve text rendering */
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 6. Improve media defaults */
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 7. Inherit fonts for form controls */
+input, button, textarea, select {
+  font: inherit;
+}
+
+/* 8. Avoid text overflows */
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+/* 9. Improve line wrapping */
+p {
+  text-wrap: pretty;
+}
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;
+}
+
+/*
+  10. Create a root stacking context
+*/
+#root, #__next {
+  isolation: isolate;
+}
+
+
+
+
+:root{
+    --cor-primaria: #FF385C;
+    --cor-secundaria: #222222;
+    --cor-fundo: #FFFFFF;
+    --cor-texto: #717171;
+    --cor-borda: #DDDDDD;
+}
+
+
+
+header {
+  display: flex;
+  justify-content: space-between; /* separa logo, barra e menu */
+  align-items: center;
+  padding: 15px 40px;
+  border-bottom: 1px solid #ddd;
+  margin: 0 80px 80px 80px;
+
+  .hearder {
+    & img {
+      height: 40px;
+    }
+  }
+
+  .sidebar {
+    display: flex;
+    align-items: center;
+    gap: 0;
+    border: 1px solid var(--cor-borda);
+    border-radius: 40px;
+    padding: 4px 8px;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+    background-color: #fff;
+
+    & li {
+      list-style: none;
+      padding: 0 16px;
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--cor-secundaria);
+      display: flex;
+      align-items: center;
+
+      &:not(:last-child):not(.lupa) {
+        border-right: 1px solid var(--cor-borda);
+      }
+
+      & a {
+        text-decoration: none;
+        color: var(--cor-secundaria);
+        display: flex;
+        align-items: center;
+        gap: 6px;
+      }
+      & img{
+        width: 48px;
+        height: 48px;
+
+      }
+    }
+
+    & .lupa {
+      background-color: var(--cor-primaria);
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-left: 8px;
+
+      & img {
+        height: auto;
+      }
+    }
+  }
+
+  .menu {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    list-style: none;
+
+    & li {
+      & a {
+        text-decoration: none;
+        color: #333;
+        font-size: 14px;
+        display: flex;
+        align-items: center;
+        gap: 6px;
+      }
+    }
+  }
+}
+
+.main{
+  margin-left: 80px;
+}
