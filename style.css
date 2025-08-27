@@ -121,7 +121,10 @@ header {
         width: 16px;
         height: 16px;
       }
-
+.house{
+  width: 48px;
+  height: 48px;
+}
     }
 
     & .lupa {
