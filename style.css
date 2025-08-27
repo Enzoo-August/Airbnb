@@ -98,7 +98,7 @@ header {
 
   .sidebar {
     height: 48px;
-    width: auto;
+    width: 26rem;
     display: flex;
     align-items: center;
     gap: 1rem;
@@ -178,7 +178,9 @@ header {
       display: flex;
       align-items: center;
       gap: 6px;
+      
     }
+
 
     &:not(:first-child) {
       background: #f2f2f2;
