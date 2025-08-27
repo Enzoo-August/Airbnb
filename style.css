@@ -1,4 +1,4 @@
-/*========================= reset ========================= */
+/* ========================= reset ========================= */
 
 /* 1. Use a more-intuitive box-sizing model */
 *, *::before, *::after {
@@ -25,18 +25,26 @@ body {
 }
 
 /* 6. Improve media defaults */
-img, picture, video, canvas, svg {
+img,
+picture,
+video,
+canvas,
+svg {
   display: block;
   max-width: 100%;
 }
 
 /* 7. Inherit fonts for form controls */
-input, button, textarea, select {
+input,
+button,
+textarea,
+select {
   font: inherit;
 }
 
 /* 8. Avoid text overflows */
-p, h1, h2, h3, h4, h5, h6 {
+p,
+h1, h2, h3, h4, h5, h6 {
   overflow-wrap: break-word;
 }
 
@@ -48,132 +56,140 @@ h1, h2, h3, h4, h5, h6 {
   text-wrap: balance;
 }
 
-/*
-  10. Create a root stacking context
-*/
-#root, #__next {
+/* 10. Create a root stacking context */
+#root,
+#__next {
   isolation: isolate;
 }
 
+/* ========================= end reset ========================= */
 
-/*========================= end reset ========================= */
 
-
-:root{
-    --cor-primaria: #FF385C;
-    --cor-secundaria: #222222;
-    --cor-fundo: #FFFFFF;
-    --cor-texto: #717171;
-    --cor-borda: #DDDDDD;
+/* ========================= variáveis ========================= */
+:root {
+  --cor-primaria: #FF385C;
+  --cor-secundaria: #222222;
+  --cor-fundo: #FFFFFF;
+  --cor-texto: #717171;
+  --cor-borda: #DDDDDD;
 }
 
 
-
+/* ========================= header ========================= */
 header {
   width: 100%;
   height: 96px;
+
   display: flex;
   justify-content: space-between; /* separa logo, barra e menu */
   align-items: center;
-  padding-right:11rem;
+
+  padding-right: 11rem;
   padding-left: 11rem;
+
   border-bottom: 1px solid #ddd;
+}
+
+/* logo */
+header .hearder img {
+  width: 102px;
+  height: 32px;
+}
+
+/* barra de busca */
+header .sidebar {
+  height: 48px;
+
+  display: flex;
+  align-items: center;
+  gap: 0;
+
+  border: 1px solid var(--cor-borda);
+  border-radius: 40px;
+
+  padding: 4px 8px;
+  margin-left: 14.5rem;
+
+  background-color: #fff;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+header .sidebar li {
+  list-style: none;
+  font-size: 14px;
+  color: var(--cor-secundaria);
+
+  display: flex;
+  align-items: center;
+}
+
+header .sidebar li:not(:last-child):not(.lupa) {
+  border-right: 1px solid var(--cor-borda);
+}
+
+header .sidebar li a {
+  text-decoration: none;
+  color: var(--cor-secundaria);
+
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+header .sidebar li img {
+  width: 16px;
+  height: 16px;
+}
+
+/* botão lupa */
+header .sidebar .lupa {
+  background-color: var(--cor-primaria);
+  padding: 0.5rem;
+  border-radius: 100%;
+}
+
+header .sidebar img {
+  height: auto;
+}
 
 
-  .hearder {
-    & img {
-      width: 102px;
-      height: 32px;
-    }
-  }
+/* ========================= menu ========================= */
+header .menu {
+  display: flex;
+  align-items: center;
+  gap: 25px;
 
-  .sidebar {
-    height: 48px;
-    display: flex;
-    align-items: center;
-    gap: 0;
-    border: 1px solid var(--cor-borda);
-    border-radius: 40px;
-    padding: 4px 8px;
-    box-shadow: 0 1px 2px rgba(0,0,0,0.1);
-    background-color: #fff;
-    margin-left: 14.5rem;
+  list-style: none;
+}
 
-    & li {
-      list-style: none;
-      font-size: 14px;
-      color: var(--cor-secundaria);
-      display: flex;
-      align-items: center;
+header .menu li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 14px;
 
-      &:not(:last-child):not(.lupa) {
-        border-right: 1px solid var(--cor-borda);
-      }
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
 
-      & a {
-        text-decoration: none;
-        color: var(--cor-secundaria);
-        display: flex;
-        align-items: center;
-        gap: 6px;
-      }
-      & img{
-        width: 16px;
-        height: 16px;
-      }
+header .menu li:not(:first-child) {
+  background: #f2f2f2;
+  border-radius: 100%;
+  padding: 0.7rem;
+}
 
-    }
-
-    & .lupa {
-      background-color: var(--cor-primaria);
-      padding: 0.5rem;
-      border-radius: 100%;
-        &img {
-          align-items: center;
-          justify-content: center;
-      }
-
-    }
-
-      & img {
-        height: auto;
-      }
-    }
-  }
-
-  .menu {
-    display: flex;
-    align-items: center;
-    gap: 25px;
-    list-style: none;
-
-    & li {
-      & a {
-        text-decoration: none;
-        color: #333;
-        font-size: 14px;
-        display: flex;
-        align-items: center;
-        gap: 6px;
-      }
-      &:not(:first-child){
-        background: #f2f2f2;
-        border-radius: 100%;
-        padding: 0.7rem;
-      }
-    }
-    & img{
-      width: 16px;
-      height: 16px;
-    }
-  }
+header .menu img {
+  width: 16px;
+  height: 16px;
+}
 
 
-.main{
+/* ========================= main ========================= */
+.main {
   margin-left: 80px;
 }
 
-.com-sal{
+.com-sal {
   width: 20px;
   height: 20px;
 }
