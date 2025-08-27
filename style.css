@@ -73,9 +73,9 @@ header {
   display: flex;
   justify-content: space-between; /* separa logo, barra e menu */
   align-items: center;
-  padding: 15px 40px;
+  padding: 15px 11rem;
   border-bottom: 1px solid #ddd;
-  margin: 0 80px 80px 80px;
+
 
   .hearder {
     & img {
