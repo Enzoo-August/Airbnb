@@ -70,16 +70,19 @@ h1, h2, h3, h4, h5, h6 {
 
 
 header {
+  width: 100%;
+  height: 96px;
   display: flex;
   justify-content: space-between; /* separa logo, barra e menu */
   align-items: center;
-  padding: 15px 11rem;
+  padding: 0px 11rem;
   border-bottom: 1px solid #ddd;
 
 
   .hearder {
     & img {
-      height: 40px;
+      width: 102px;
+      height: 32px;
     }
   }
 
