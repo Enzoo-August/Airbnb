@@ -75,7 +75,8 @@ header {
   display: flex;
   justify-content: space-between; /* separa logo, barra e menu */
   align-items: center;
-  padding: 0px 11rem;
+  padding-right:11rem;
+  padding-left: 11rem;
   border-bottom: 1px solid #ddd;
 
 
@@ -87,6 +88,7 @@ header {
   }
 
   .sidebar {
+    height: 48px;
     display: flex;
     align-items: center;
     gap: 0;
@@ -95,6 +97,7 @@ header {
     padding: 4px 8px;
     box-shadow: 0 1px 2px rgba(0,0,0,0.1);
     background-color: #fff;
+    margin-left: 14.5rem;
 
     & li {
       list-style: none;
@@ -154,10 +157,20 @@ header {
         align-items: center;
         gap: 6px;
       }
+      &:not(:first-child){
+        background: #f2f2f2;
+        border-radius: 100%;
+        padding: 0.7rem;
+      }
+    }
+    & img{
+      width: 16px;
+      height: 16px;
     }
   }
 }
 
 .main{
-  margin-left: 80px;
+  margin-left: 11rem;
+  margin-right: 11rem;
 }
