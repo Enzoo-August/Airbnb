@@ -98,10 +98,10 @@ header {
 
   .sidebar {
     height: 48px;
-
+    width: auto;
     display: flex;
     align-items: center;
-    gap: 0;
+    gap: 1rem;
 
     border: 1px solid var(--cor-borda);
     border-radius: 40px;
@@ -137,6 +137,10 @@ header {
         width: 16px;
         height: 16px;
       }
+    }
+    .house{
+      width: 48px;
+      height: 48px;
     }
 
     .lupa {
@@ -196,6 +200,9 @@ header {
 }
 
 .com-sal {
-  width: 20px;
-  height: 20px;
+
+  & img{
+    width: 20px;
+    height: 20px;
+  }
 }
