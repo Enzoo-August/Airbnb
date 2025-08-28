@@ -447,9 +447,10 @@ aside{
 
 .globo{
   display: flex;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
   gap: 1rem;
+  border-bottom: 0.5px solid;
   & div{
     display: flex;
     flex-direction: column;
