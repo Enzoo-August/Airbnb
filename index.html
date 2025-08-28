@@ -1,72 +1,154 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Airbnb</title>
-  <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Airbnb</title>
+    <link rel="stylesheet" href="style.css" />
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <!-- Logo -->
+      <div class="hearder">
+        <a href="#"><img src="assets/logo.png" alt="Logo do Airbnb" /></a>
+      </div>
 
-</head>
-<body>
-  <header>
-    <!-- Logo -->
-    <div class="hearder">
-      <a href="#"><img src="assets/logo.png" alt="Logo do Airbnb"></a>
-    </div>
+      <!-- Barra de pesquisa -->
+      <nav class="searchbar">
+        <ul class="sidebar">
+          <li>
+            <a href="#"
+              ><img
+                class="house"
+                src="https://a0.muscache.com/im/pictures/airbnb-platform-assets/AirbnbPlatformAssets-search-bar-icons/original/4aae4ed7-5939-4e76-b100-e69440ebeae4.png?im_w=240"
+                alt=""
+              />Qualquer lugar</a
+            >
+          </li>
 
-    <!-- Barra de pesquisa -->
-    <nav class="searchbar">
-      <ul class="sidebar">
+          <li><a href="#">Qualquer semana</a></li>
 
-        <li><a href="#"><img class="house" src="https://a0.muscache.com/im/pictures/airbnb-platform-assets/AirbnbPlatformAssets-search-bar-icons/original/4aae4ed7-5939-4e76-b100-e69440ebeae4.png?im_w=240" alt="">Qualquer lugar</a></li>
+          <li><a href="#">Hóspedes?</a></li>
+          <li class="lupa">
+            <a href="#"><img src="assets/Lupa.png" alt="lupa de pesquisa" /></a>
+          </li>
+        </ul>
+      </nav>
+      <!-- Menu lateral -->
+      <nav>
+        <ul class="menu">
+          <li><a href="#">Torne-se um anfitrião</a></li>
+          <li>
+            <a href="#"
+              ><img src="./assets/global.png" alt="Imagem de região"
+            /></a>
+          </li>
+          <li>
+            <a href="#"
+              ><img src="./assets/hamburger.png" alt="hamburguer"
+            /></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main">
+      <div class="titulo">
+        <h1>APS_1904B - Hospede-se no Centro de Alphaville!</h1>
 
-        <li><a href="#">Qualquer semana</a></li>
-
-        <li><a href="#">Hóspedes?</a></li>
-        <li class="lupa"><a href="#"><img src="assets/Lupa.png" alt="lupa de pesquisa"></a></li>
-      </ul>
-    </nav>
-    <!-- Menu lateral -->
-    <nav>
-      <ul class="menu">
-        <li><a href="#">Torne-se um anfitrião</a></li>
-        <li><a href="#"><img src="./assets/global.png" alt="Imagem de região"></a></li>
-        <li><a href="#"><img src="./assets/hamburger.png" alt="hamburguer"></a></li>
-      </ul>
-    </nav>
-  </header>
-   <main class="main">
-        <div class="titulo">
-          <h1>APS_1904B - Hospede-se no Centro de Alphaville!</h1>
-          
-          <!-- Seção de Ações do Imóvel -->
-          <section class="com-sal">
-      
-                  <a href="#" > <img src="assets/exportar.png" alt="Icon de Compartilhar"><p>Compartilhar</p></a>
-                  <a href="#"><img src="assets/contorno-em-forma-de-coracao.png" alt="Icon Coracao">Salvar</a>
-       
-          </section>
-        </div> 
-
-        <section class="image-grid">
-            
-                    <img class = "imagem-quarto" src="https://a0.muscache.com/im/pictures/miso/Hosting-1370949390966919355/original/62375181-2c9b-4c82-b75e-a406b5211130.jpeg?im_w=960" alt="Imagem principal do imóvel">
-
-                    <img src="https://a0.muscache.com/im/pictures/miso/Hosting-1370949390966919355/original/245f6963-735d-4bd9-9489-04f8b781063e.jpeg?im_w=720" alt="Sala de estar do imovel">
-
-                    <img class = "imagem-exterior" src="https://a0.muscache.com/im/pictures/miso/Hosting-1370949390966919355/original/786308cd-ccd2-454c-a5a6-e5dd4fb962db.jpeg?im_w=720" alt="Exterior do imóvel">
-
-                    <img  src="https://a0.muscache.com/im/pictures/miso/Hosting-1370949390966919355/original/21b62688-c7d5-4405-bda7-6fa5e0cbd7ae.jpeg?im_w=720" alt="Cozinha do imóvel">
-                    <img class = "imagem-lazer" src="https://a0.muscache.com/im/pictures/miso/Hosting-1370949390966919355/original/a7dd4867-8296-414d-bd6b-2cace307c9a8.jpeg?im_w=720" alt="Area de lazer do imóvel">
+        <!-- Seção de Ações do Imóvel -->
+        <section class="com-sal">
+          <a href="#">
+            <img src="assets/exportar.png" alt="Icon de Compartilhar" />
+            <p>Compartilhar</p></a
+          >
+          <a href="#"
+            ><img
+              src="assets/contorno-em-forma-de-coracao.png"
+              alt="Icon Coracao"
+            />Salvar</a
+          >
         </section>
-    </main> 
-    <footer>
-        <!-- Rodapé -->
-    </footer>
-</body>
-</html>
+      </div>
 
+      <section class="image-grid">
+        <img
+          class="imagem-quarto"
+          src="https://a0.muscache.com/im/pictures/miso/Hosting-1370949390966919355/original/62375181-2c9b-4c82-b75e-a406b5211130.jpeg?im_w=960"
+          alt="Imagem principal do imóvel"
+        />
+
+        <img
+          src="https://a0.muscache.com/im/pictures/miso/Hosting-1370949390966919355/original/245f6963-735d-4bd9-9489-04f8b781063e.jpeg?im_w=720"
+          alt="Sala de estar do imovel"
+        />
+
+        <img
+          class="imagem-exterior"
+          src="https://a0.muscache.com/im/pictures/miso/Hosting-1370949390966919355/original/786308cd-ccd2-454c-a5a6-e5dd4fb962db.jpeg?im_w=720"
+          alt="Exterior do imóvel"
+        />
+
+        <img
+          src="https://a0.muscache.com/im/pictures/miso/Hosting-1370949390966919355/original/21b62688-c7d5-4405-bda7-6fa5e0cbd7ae.jpeg?im_w=720"
+          alt="Cozinha do imóvel"
+        />
+        <img
+          class="imagem-lazer"
+          src="https://a0.muscache.com/im/pictures/miso/Hosting-1370949390966919355/original/a7dd4867-8296-414d-bd6b-2cace307c9a8.jpeg?im_w=720"
+          alt="Area de lazer do imóvel"
+        />
+      </section>
+      <div class="container">
+        <article class="denscricao">
+          <section class="local">
+            <h2>Espaço inteiro: apartamento em Barueri, Brasil</h2>
+            <h3>2hóspedes · 1quarto · 1cama · 1banheiro</h3>
+          </section>
+          <section class="box">
+            <div class="preferido">
+              <img
+                src="./assets/Folha esq.avif"
+                alt="folha esquerda decorativa"
+              />
+              <p>
+                Preferido<br />
+                dos hóspedes
+              </p>
+              <img
+                src="./assets/folha dir.avif"
+                alt="folha direita decorativa"
+              />
+            </div>
+            <div class="sucesso">
+              <h3>
+                <p>
+                  Uma das acomodações no Airbnb que fazem mais sucesso com os
+                  hóspedes
+                </p>
+              </h3>
+            </div>
+            <div class="coluna-alinhar-centro">
+              <h2>4,89</h2>
+              <p>★★★★★</p>
+            </div>
+            <div class="coluna-alinhar-centro">
+              <h2>9</h2>
+              <p>avaliações</p>
+            </div>
+          </section>
+        </article>
+        <aside></aside>
+      </div>
+    </main>
+    <footer>
+      <!-- Rodapé -->
+    </footer>
+  </body>
+</html>
