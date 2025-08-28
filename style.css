@@ -442,3 +442,20 @@ aside{
   }
 } 
 
+
+/* ========================= Aside, section globo ========================= */
+
+.globo{
+  display: flex;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  gap: 1rem;
+  & div{
+    display: flex;
+    flex-direction: column;
+  }
+  & img{
+    width: 40px;
+    height:40px;
+  }
+}
