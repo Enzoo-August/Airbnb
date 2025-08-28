@@ -229,14 +229,31 @@ header {
 
 .titulo{
   display: flex;
+  justify-content: space-between;
+  padding: 24px 0 24px 0;
+  & h1{
+    font-weight: 550;
+  }
+  
+  
+  & a{
+    align-items: center;
+    color: var(--cor-secundaria);
+    
+  }
 
 }
 
 .com-sal {
       display: flex;
+      gap: 20px;
     
       & a{
         display: flex;
+        gap: 7px;
+        font-weight: 500;
+        
+        
       }
       
   & img{
