@@ -318,7 +318,7 @@ aside{
   position: sticky;
   top: 1rem;
   align-self: flex-start;
-  
+
   & section{
     border: 0.5px solid;
     border-color: #8c8c8c;
@@ -378,6 +378,14 @@ aside{
   font-weight: 500;
   border-radius: 2rem;
   margin-top: 1rem;
+  & a{
+    text-decoration: none;
+    color: var(--cor-fundo);
+    font-size: 18px;
+    font-family: var(--font-texto);
+    font-weight: 600;
+
+  }
 }
 .local{
   display:flex;
