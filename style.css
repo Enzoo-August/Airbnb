@@ -308,12 +308,16 @@ header {
   width: 100%;
 }
 
+
 aside{
   margin-top: 2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 42%;
+  position: sticky;
+  top: 1rem;
+  align-self: flex-start;
   & section{
     border: 0.5px solid;
     border-color: #8c8c8c;
