@@ -226,8 +226,19 @@ header {
   margin-right: 11rem;
 }
 
-.com-sal {
 
+.titulo{
+  display: flex;
+
+}
+
+.com-sal {
+      display: flex;
+    
+      & a{
+        display: flex;
+      }
+      
   & img{
     width: 20px;
     height: 20px;
