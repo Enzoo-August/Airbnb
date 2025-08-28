@@ -314,7 +314,7 @@ aside{
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 42%;
+  width: 37%;
   position: sticky;
   top: 1rem;
   align-self: flex-start;
