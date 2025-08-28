@@ -467,6 +467,9 @@ aside{
   display: grid;
   grid-template-rows: 1fr 1fr 1fr;
   grid-template-columns: 1fr 1fr;
+  border-bottom: 0.5px solid #8c8c8c;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
   & div{
     display: flex;
     &:first-child{
@@ -487,5 +490,30 @@ aside{
     }
   }
 }
+
+/* ========================= Aside, section info2 ========================= */
+
+.info2{
+  margin-top: 2rem;
+  gap:2rem;
+  display: flex;
+  flex-direction:column;
+  border-bottom: 0.5px solid #8c8c8c;
+  margin-bottom: 100px;
+  padding-bottom: 4rem;
+  & .denscricao2{
+    & p:nth-child(2){
+      margin-bottom: rem;
+    }
+    & a{
+      text-decoration: none;
+      color: var(--cor-secundaria);
+      background-color: #f2f2f2;
+      padding: 14px 24px;
+      border-radius: 10px;
+    }
+  }
+}
+
 
 
