@@ -295,3 +295,123 @@ header {
 }
 
 
+/* ========================= container, aticle e aside ========================= */
+
+.container{
+  display: flex;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+aside{
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 42%;
+  & section{
+    border: 0.5px solid;
+    border-color: #8c8c8c;
+    border-radius: 10px;
+    padding: 24px;
+    width: 372.33px;
+    margin-left: 8rem;
+      & img{
+        width: 12px;
+        height: 12px;
+      }
+      & .adicone-datas p{
+        font-size: 22px;
+        font-weight: 500;
+      }
+      & .grid-checks{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        & > div{
+          border: 0.5px solid;
+        }
+        & .check-in{
+          border-radius: 7px 0 0 0;
+          padding: 0.5rem;
+        }
+        & .checkout{
+          border-radius: 0 7px 0 0;
+          padding: 0.5rem;
+        }
+        & .hospede{
+          display: flex;
+          grid-column: 1 / -1;
+          gap: 13rem;
+          align-items: center;
+          border-radius: 0 0 7px 7px;
+          padding: 0.5rem;
+          & div{
+            display: flex;
+            flex-direction: column;
+          }
+        }
+      }
+  }
+}
+
+.negrito-11px{
+  font-weight: 500;
+  font-size: 11px;
+}
+
+.local{
+  display:flex;
+  flex-direction: column;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  
+  & h2{
+    font-size: 20px;
+    font-weight: 550;
+  }
+  & h3{
+    font-size: 16px;
+    font-weight: 450;
+  }
+}
+
+
+.box{
+  display: flex;
+  border: 1px solid;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  align-items: center;
+  gap: 1rem;
+  & .preferido{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    & img{
+      height: 50px;
+      width: auto;
+    }
+    & p{
+      width: auto;
+      height: auto;
+      
+    }
+  }
+  & .sucesso{
+    & p{
+      width: 16rem;
+      font-weight: 500;
+      font-size: 14px;
+    }
+  }
+  .coluna-alinhar-centro{
+    align-items: center;
+    display: flex;
+    flex-direction: column ;
+  }
+} 
+
