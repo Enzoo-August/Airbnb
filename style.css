@@ -194,6 +194,7 @@ header {
       text-decoration: none;
       color: #333;
       font-size: 14px;
+      font-weight: 500;
 
       display: flex;
       align-items: center;
@@ -202,6 +203,7 @@ header {
 
         &:hover {
           background-color: #f7f7f7;
+          padding: 10px;
             }
     }
 
@@ -233,6 +235,7 @@ header {
   padding: 24px 0 24px 0;
   & h1{
     font-weight: 550;
+    font-size: 24px;
   }
   
   
@@ -252,6 +255,7 @@ header {
         display: flex;
         gap: 7px;
         font-weight: 500;
+        font-size: 14px;
         
         
       }
