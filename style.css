@@ -279,7 +279,11 @@ header {
   gap: 0.5rem;
   width: 100%;
 
-  
+  & img:hover{
+    transition: 3;
+    filter: brightness(90%); 
+    /* não sei se será utilizado, porem estará aqui */
+  }
 }
 
 .imagem-quarto{
