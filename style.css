@@ -450,7 +450,7 @@ aside{
   padding-top: 2rem;
   padding-bottom: 2rem;
   gap: 1rem;
-  border-bottom: 0.5px solid;
+  border-bottom: 0.5px solid #8c8c8c;
   & div{
     display: flex;
     flex-direction: column;
