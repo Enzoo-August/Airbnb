@@ -500,10 +500,10 @@ aside{
   flex-direction:column;
   border-bottom: 0.5px solid #8c8c8c;
   margin-bottom: 100px;
-  padding-bottom: 4rem;
+  padding-bottom: 3rem;
   & .denscricao2{
     & p:nth-child(2){
-      margin-bottom: rem;
+      margin-bottom: 2rem;
     }
     & a{
       text-decoration: none;
