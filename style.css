@@ -238,7 +238,15 @@ header {
 
 .image-grid{
   display: grid;
-  grid-template-columns: repeat(4, 1fr); 
-  grid-template-rows: repeat(2);
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.5rem;
+  width: 100%;
+  
 }
+
+.imagem-quarto{
+  grid-column: 1 / 3;
+  grid-row: 1 / 3;
+}
+
 
