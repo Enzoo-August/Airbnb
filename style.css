@@ -499,7 +499,7 @@ aside{
   display: flex;
   flex-direction:column;
   border-bottom: 0.5px solid #8c8c8c;
-  margin-bottom: 100px;
+  margin-bottom: 2rem;
   padding-bottom: 3rem;
   & .denscricao2{
     & p:nth-child(2){
@@ -515,5 +515,13 @@ aside{
   }
 }
 
+/* ========================= Aside, section local dormir ========================= */
 
-
+.local-dormir{
+  display: flex;
+  flex-direction: column;
+  & img{
+    width: 318.66px;
+    height:212.44px
+  }
+}
