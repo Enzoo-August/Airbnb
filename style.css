@@ -542,3 +542,41 @@ aside{
     height:212.44px
   }
 }
+
+/* ========================= Aside, section Oferece ========================= */
+
+.oferece{
+  & > div{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* ========================= Aside, section avaliação ========================= */
+
+.avaliacao{
+  & img{
+    width: 16px;
+    height: 16px; 
+    /* alterar valor após */
+  }
+}
+/* ========================= Aside, section avaliação 2 ========================= */
+
+.avaliacao2{
+  width: 100%;
+}
+
+/* ========================= Comentarios ========================= */
+
+.comentarios{
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  & .comentario{
+     gap: 1rem;/* tirar */
+  }
+}
+
+/* ========================= footer ========================= */
