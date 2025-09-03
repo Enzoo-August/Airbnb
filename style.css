@@ -588,4 +588,10 @@ aside{
 .gap{
   gap: 2rem;
 }
+/* O que deve saber  */
 
+.saber{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column: 1fr;
+}
