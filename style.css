@@ -595,5 +595,12 @@ aside{
   grid-template-columns: 1fr 1fr 1fr;
   grid-column: 1fr;
 }
+.regras{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-items: top;
+  margin-top: 2rem;
+}
 
 
