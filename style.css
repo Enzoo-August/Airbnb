@@ -546,10 +546,15 @@ aside{
 /* ========================= Aside, section Oferece ========================= */
 
 .oferece{
+  padding-bottom: 2rem;
+  margin-bottom: 2rem;
   & > div{
     display: grid;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr;
+    & > div {
+      display: flex;
+    }
   }
 }
 
@@ -561,8 +566,26 @@ aside{
   display: grid;
   grid-template-rows: 1fr 1fr;
   grid-template-columns: 1fr 1fr;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  margin-bottom: 4rem;
+  gap: 2rem;
+  border-top: 0.5px solid #8c8c8c ;
+  border-bottom: 0.5px solid #8c8c8c;
   & .comentario{
-     gap: 1rem;/* tirar */
+     display: column;
+     
+     & .nome{
+      display: column;
+     }
   }
+
+}
+
+.displayRow{
+  display:flex;
+}
+.gap{
+  gap: 2rem;
 }
 
