@@ -28,7 +28,7 @@ O objetivo é praticar **HTML5 e CSS3**, criando uma página responsiva e estrut
 3.Abra o arquivo index.html diretamente no navegador
 ou use a extensão Live Server do VS Code para rodar localmente.
 
-🛠️ Tecnologias Utilizadas
+## 🛠️ Tecnologias Utilizadas
 
 HTML5
 
