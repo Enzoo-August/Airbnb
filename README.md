@@ -38,7 +38,7 @@ Google Fonts (Montserrat e Roboto)
 
 Imagens externas (Airbnb e assets locais)
 
-👨‍💻 Integrantes do Grupo
+## 👨‍💻 Integrantes do Grupo
 
 Pedro Marchese — RM: 563339
 
