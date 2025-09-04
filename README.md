@@ -1,6 +1,7 @@
 # 🏡 APS_1904B - Hospede-se no Centro de Alphaville!
 
-git hub pages:
+git hub pages:https://enzoo-august.github.io/Airbnb
+Caso Não esteja parecido, oucom outras coisas , coloque o tamanho da tela por 1500 (automaticamente vai ficar 1500 x algum valor)
 
 link da pagina copiada: https://www.airbnb.com.br/rooms/1370949390966919355?check_in=2025-10-02&search_mode=regular_search&source_impression_id=p3_1756243868_P3dU6lYtxRWP67ke&previous_page_section_name=1000&federated_search_id=e6d4ee0b-2fa5-400f-a074-d128efa13eb1&guests=1&adults=1&check_out=2025-10-03
 
